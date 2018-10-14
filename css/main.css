@@ -1,0 +1,343 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*menu*/
+#main {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1200;    
+}
+
+#logoSection{
+    height: 100%;
+    width: 50%;
+    background-color: #1A1A1D;
+    box-shadow: 10px 0px 30px rgba(0, 0, 0, .4);
+    position: absolute;
+    z-index: 999;
+}
+
+#logoSection img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #001f3f;
+    border-radius: 50%;
+}
+#menuSection{
+    height: 100%;
+    width: 50%;
+    background-color: #001f3f;
+    position: absolute;
+    left: 50%;
+
+}
+
+#menuSection ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    top: 30%;
+    left: -1%;
+}
+
+#menuSection ul li {
+    list-style: none;
+    height: 100px;
+    width: 395px;
+    font-family: arial black;
+    font-size: 60px;
+    line-height: 100px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+li a {
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    top:0;
+    left: 0;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+}
+
+
+.window {
+    position: absolute;
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color:  whitesmoke;
+    transition: 2s;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+#menuSection ul li:hover .window{
+ left: 0;
+}
+#openMenu {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+/*banner*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    -webkit-box-shadow: 0 8px 6px -4px black;
+    -moz-box-shadow: 0 8px 6px -4px black;
+    box-shadow: 0 8px 6px -4px black;
+}
+
+#bg{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    }
+
+#info{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 9em;
+    letter-spacing: 10px;
+    margin: 15px 0px;
+    padding: 0;
+    fill:#000;
+    font-weight: 800;
+    text-shadow: 5px 5px 20px black;
+}
+
+#masked{
+    mask:url("#maskLayer");
+}
+#logo{
+    width: 6%;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-shadow: 0 0 25px black,
+    inset 0 0 25px #F0FFFF;
+
+}
+#menu{
+    width:60px;
+    position: fixed;
+    top:10%;
+    left:10px;
+    cursor: pointer;
+    z-index: 1000;
+
+}
+#elements{
+    height: 100%;
+    width:83%;
+    position: absolute; 
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+#product{
+    width:25%;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#btn{
+    height:40px;
+    width: 200px;
+    background-color:#001f3f;
+    font-family: fantasy;
+    font-size: 14px;
+    color:white;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 99;
+    box-shadow: 5px 5px 25px  black;
+    transition: 2s;
+}
+
+#btn:hover{    
+    box-shadow: 0 0 0 black;
+}
+
+/*galleria*/
+.galleria{
+
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #3F1F1F 100%);
+
+}
+
+.galleria .titulo {
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: bisque;
+    text-align: center;
+
+}
+
+.contenedor {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:85%;
+    height: 85%;
+    overflow: scroll;
+
+}
+
+#aniimated-thumbnials a {
+    display: inline-block;
+    width: 24%;
+    height: 250px;
+}
+
+#aniimated-thumbnials a img{
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+/* about*/
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #434343 0%,#3F1F1F 100%);
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+
+
+}
+
+.imagen-about{
+    width: 45%;
+    border: 5px solid gray;
+    height: 80%;
+    border-radius: 5px;
+
+
+}
+.contenido-about{
+    width: 45%;
+    height: 80%;
+    border: 5px solid gray;
+   border-radius: 5px;
+}
+
+/*media query que afecta al banner y  ami galleria*/
+@media (max-width: 960px){
+    #info{
+        font-size: 7em;
+        letter-spacing: 8px;       
+    }
+    #logo{
+        width: 8%;
+            
+    }  
+
+    #aniimated-thumbnials a {
+        width: 32%;
+        
+    }   
+    
+    
+
+}
+
+@media (max-width: 745px){
+    #info{
+        font-size: 5em;
+        letter-spacing: 6px;
+            
+    }
+    #logo{
+        width: 10%;           
+    }
+
+    #aniimated-thumbnials a {
+        width: 49%;
+        
+    }   
+
+    
+}
+
+@media (max-width: 545px){
+    #info{
+        font-size: 3em;
+        letter-spacing: 4px;
+            
+    }   
+    
+    #logo{
+        width: 13%;           
+    }
+
+    #aniimated-thumbnials a {
+        width: 98%;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
